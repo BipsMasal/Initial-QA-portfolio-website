@@ -18,11 +18,9 @@ Search `index.html` for:
 - `https://www.linkedin.com/in/bipin-masal-b0b703282`
 - project `href="#"`
 
-Replace those with your real information and project URLs.
-
 ## GitHub Pages
 
-1. Create a GitHub repository, e.g. `qa-portfolio`.
+1. Create a GitHub repository, e.g. `Initial-QA-portfolio-website`.
 2. Upload all files while keeping the folder structure.
 3. Open **Settings → Pages**.
 4. Under **Build and deployment**, select **Deploy from a branch**.
@@ -30,4 +28,4 @@ Replace those with your real information and project URLs.
 6. Save.
 
 Your site will be available at:
-`https://YOUR-USERNAME.github.io/qa-portfolio/`
+`https://bipsmasal.github.io/Initial-QA-portfolio-website/`
