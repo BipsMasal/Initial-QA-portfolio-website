@@ -12,6 +12,7 @@ Static portfolio website designed for GitHub Pages.
 ## Before publishing
 
 Search `index.html` for:
+
 - `Bipin Masal`
 - `bipinmasal2@gmail.com`
 - `https://github.com/BipsMasal`
