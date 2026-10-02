@@ -13,9 +13,9 @@ Static portfolio website designed for GitHub Pages.
 
 Search `index.html` for:
 - `Bipin Masal`
-- `your.email@example.com`
-- `https://github.com/`
-- `https://www.linkedin.com/`
+- `bipinmasal2@gmail.com`
+- `https://github.com/BipsMasal`
+- `https://www.linkedin.com/in/bipin-masal-b0b703282`
 - project `href="#"`
 
 Replace those with your real information and project URLs.
