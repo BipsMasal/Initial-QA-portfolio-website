@@ -1658,3 +1658,65 @@ footer {
   }
 
 }
+/* Contact form messages */
+.form-message {
+  display: none;
+  margin-top: 20px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.form-message h3 {
+  margin: 14px 0 8px;
+  font-size: 20px;
+}
+
+.form-message p {
+  margin: 0 auto 20px;
+  max-width: 420px;
+  color: #7f8a93;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.form-success {
+  border-color: rgba(184, 255, 69, 0.35);
+}
+
+.form-error {
+  border-color: rgba(255, 80, 80, 0.35);
+}
+
+.success-icon,
+.error-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.success-icon {
+  color: var(--bg);
+  background: var(--accent);
+}
+
+.error-icon {
+  color: #fff;
+  background: #d94b4b;
+}
+
+.form-message .btn {
+  margin-top: 4px;
+}
+
+.contact-form.is-hidden {
+  display: none;
+}
