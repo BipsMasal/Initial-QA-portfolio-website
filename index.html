@@ -1,171 +1,999 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Bipin Masal — Junior QA Engineer portfolio. Manual testing, API testing, Playwright automation and performance testing.">
+
+  <meta
+    name="description"
+    content="Bipin Masal — Junior QA Engineer portfolio. Manual testing, API testing, Playwright automation and performance testing."
+  >
+
   <title>Bipin Masal | QA Engineer</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
   <div class="noise"></div>
 
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
+
   <header class="nav-wrap">
+
     <nav class="nav container">
-      <a class="brand" href="#home"><span class="brand-mark">Q</span><span>BM<span class="accent">.</span>QA</span></a>
-      <button class="menu-btn" aria-label="Open menu"><span></span><span></span><span></span></button>
+
+      <a class="brand" href="#home">
+        <span class="brand-mark">Q</span>
+        <span>BM<span class="accent">.</span>QA</span>
+      </a>
+
+      <button
+        class="menu-btn"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
       <div class="nav-links">
+
         <a href="#about">About</a>
+
         <a href="#skills">Stack</a>
+
         <a href="#work">Work</a>
+
         <a href="#process">Approach</a>
-        <a href="#contact" class="nav-cta">Let's connect <span>↗</span></a>
+
+        <a href="#contact" class="nav-cta">
+          Let's connect <span>↗</span>
+        </a>
+
       </div>
+
     </nav>
+
   </header>
 
+
   <main id="home">
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
     <section class="hero container">
+
       <div class="hero-copy">
-        <div class="eyebrow"><span class="pulse"></span> AVAILABLE FOR QA OPPORTUNITIES</div>
-        <h1>I find the bugs<br><span>before users do.</span></h1>
-        <p class="hero-text">Junior- QA Engineer focused on <b>manual testing</b>, <b>API validation</b>, and <b>Playwright automation</b> — with a mindset built around finding the loopholes others miss.</p>
+
+        <div class="eyebrow">
+          <span class="pulse"></span>
+          AVAILABLE FOR QA OPPORTUNITIES
+        </div>
+
+        <h1>
+          I find the bugs<br>
+          <span>before users do.</span>
+        </h1>
+
+        <p class="hero-text">
+          Junior QA Engineer focused on
+          <b>manual testing</b>,
+          <b>API validation</b>,
+          and <b>Playwright automation</b>
+          — with a mindset built around finding
+          the loopholes others miss.
+        </p>
+
         <div class="hero-actions">
-          <a href="#work" class="btn btn-primary">Explore my work <span>↓</span></a>
-          <a href="#contact" class="btn btn-ghost">Contact me <span>↗</span></a>
+
+          <a href="#work" class="btn btn-primary">
+            Explore my work <span>↓</span>
+          </a>
+
+          <a href="#contact" class="btn btn-ghost">
+            Contact me <span>↗</span>
+          </a>
+
         </div>
+
+
         <div class="hero-meta">
-          <div><span class="meta-label">FOCUS</span><strong>Quality Engineering</strong></div>
-          <div><span class="meta-label">BASED IN</span><strong>Kathmandu, Nepal</strong></div>
-          <div><span class="meta-label">STATUS</span><strong class="status"><i></i> Learning & building</strong></div>
+
+          <div>
+            <span class="meta-label">FOCUS</span>
+            <strong>Quality Engineering</strong>
+          </div>
+
+          <div>
+            <span class="meta-label">BASED IN</span>
+            <strong>Kathmandu, Nepal</strong>
+          </div>
+
+          <div>
+            <span class="meta-label">STATUS</span>
+
+            <strong class="status">
+              <i></i>
+              Learning & building
+            </strong>
+
+          </div>
+
         </div>
+
       </div>
+
+
+      <!-- QA TERMINAL -->
 
       <div class="qa-terminal">
+
         <div class="terminal-top">
-          <div class="dots"><i></i><i></i><i></i></div>
+
+          <div class="dots">
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+
           <span>qa-session.js</span>
-          <span class="terminal-live">● LIVE</span>
+
+          <span class="terminal-live">
+            ● LIVE
+          </span>
+
         </div>
+
+
         <div class="terminal-body">
-          <div class="code-line"><span class="ln">01</span><span><em>describe</em>(<b>'Checkout flow'</b>, () =&gt; {</span></div>
-          <div class="code-line"><span class="ln">02</span><span class="indent"><em>it</em>(<b>'should handle valid payment'</b>, async () =&gt; {</span></div>
-          <div class="code-line"><span class="ln">03</span><span class="indent2"><em>await</em> page.<span class="cyan">fill</span>(<b>'#card'</b>, validCard);</span></div>
-          <div class="code-line"><span class="ln">04</span><span class="indent2"><em>await</em> page.<span class="cyan">click</span>(<b>'Pay'</b>);</span></div>
-          <div class="code-line"><span class="ln">05</span><span class="indent2">expect(response.status()).<span class="cyan">toBe</span>(<b>200</b>);</span></div>
-          <div class="code-line"><span class="ln">06</span><span class="indent"><em>});</em></span></div>
-          <div class="code-line"><span class="ln">07</span><span class="indent"><em>it</em>(<b>'should reject empty card'</b>, async () =&gt; {</span></div>
-          <div class="code-line"><span class="ln">08</span><span class="indent2"><span class="red">// BUG FOUND:</span> validation missing</span></div>
-          <div class="code-line"><span class="ln">09</span><span class="indent2"><span class="yellow">await</span> report.<span class="cyan">createIssue</span>();</span></div>
-          <div class="code-line"><span class="ln">10</span><span class="indent"><em>});</em></span></div>
-          <div class="code-line"><span class="ln">11</span><span><em>});</em></span></div>
-          <div class="terminal-result"><span>✓</span> 12 passed &nbsp; <span class="fail">✕ 1 bug detected</span></div>
+
+          <div class="code-line">
+            <span class="ln">01</span>
+            <span>
+              <em>describe</em>(<b>'Checkout flow'</b>, () =&gt; {
+            </span>
+          </div>
+
+          <div class="code-line">
+            <span class="ln">02</span>
+            <span class="indent">
+              <em>it</em>(<b>'should handle valid payment'</b>, async () =&gt; {
+            </span>
+          </div>
+
+          <div class="code-line">
+            <span class="ln">03</span>
+            <span class="indent2">
+              <em>await</em>
+              page.<span class="cyan">fill</span>(<b>'#card'</b>, validCard);
+            </span>
+          </div>
+
+          <div class="code-line">
+            <span class="ln">04</span>
+            <span class="indent2">
+              <em>await</em>
+              page.<span class="cyan">click</span>(<b>'Pay'</b>);
+            </span>
+          </div>
+
+          <div class="code-line">
+            <span class="ln">05</span>
+            <span class="indent2">
+              expect(response.status()).
+              <span class="cyan">toBe</span>(<b>200</b>);
+            </span>
+          </div>
+
+          <div class="code-line">
+            <span class="ln">06</span>
+            <span class="indent">
+              <em>});</em>
+            </span>
+          </div>
+
+          <div class="code-line">
+            <span class="ln">07</span>
+            <span class="indent">
+              <em>it</em>(<b>'should reject empty card'</b>, async () =&gt; {
+            </span>
+          </div>
+
+          <div class="code-line">
+            <span class="ln">08</span>
+            <span class="indent2">
+              <span class="red">// BUG FOUND:</span>
+              validation missing
+            </span>
+          </div>
+
+          <div class="code-line">
+            <span class="ln">09</span>
+            <span class="indent2">
+              <span class="yellow">await</span>
+              report.<span class="cyan">createIssue</span>();
+            </span>
+          </div>
+
+          <div class="code-line">
+            <span class="ln">10</span>
+            <span class="indent">
+              <em>});</em>
+            </span>
+          </div>
+
+          <div class="code-line">
+            <span class="ln">11</span>
+            <span>
+              <em>});</em>
+            </span>
+          </div>
+
+
+          <div class="terminal-result">
+
+            <span>✓</span>
+            12 passed
+
+            &nbsp;
+
+            <span class="fail">
+              ✕ 1 bug detected
+            </span>
+
+          </div>
+
         </div>
+
       </div>
+
     </section>
+
+
+    <!-- =========================
+         METRICS
+    ========================== -->
 
     <section class="metrics">
+
       <div class="container metrics-grid">
-        <div><strong>01</strong><span>Manual QA</span></div>
-        <div><strong>02</strong><span>API Testing</span></div>
-        <div><strong>03</strong><span>Playwright</span></div>
-        <div><strong>04</strong><span>Performance</span></div>
+
+        <div>
+          <strong>01</strong>
+          <span>Manual QA</span>
+        </div>
+
+        <div>
+          <strong>02</strong>
+          <span>API Testing</span>
+        </div>
+
+        <div>
+          <strong>03</strong>
+          <span>Playwright</span>
+        </div>
+
+        <div>
+          <strong>04</strong>
+          <span>Performance</span>
+        </div>
+
       </div>
+
     </section>
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
 
     <section id="about" class="section container">
-      <div class="section-kicker">01 / ABOUT</div>
-      <div class="two-col">
-        <div>
-          <h2>Quality isn't just<br><span>finding bugs.</span></h2>
-        </div>
-        <div class="about-copy">
-          <p>I’m a junior QA engineer who enjoys understanding how a product can fail — then turning those failure paths into clear, reproducible tests.</p>
-          <p>My current focus combines hands-on manual testing with API testing and Playwright automation. I like testing from the user's perspective while also looking underneath the UI to validate requests, responses, data, permissions and edge cases.</p>
-          <div class="quote-box"><span>“</span><p>A good tester doesn't only ask <b>“Does it work?”</b><br>They ask <b>“How can I break it?”</b></p></div>
-        </div>
+
+      <div class="section-kicker">
+        01 / ABOUT
       </div>
+
+      <div class="two-col">
+
+        <div>
+
+          <h2>
+            Quality isn't just<br>
+            <span>finding bugs.</span>
+          </h2>
+
+        </div>
+
+
+        <div class="about-copy">
+
+          <p>
+            I’m a junior QA engineer who enjoys understanding
+            how a product can fail — then turning those failure
+            paths into clear, reproducible tests.
+          </p>
+
+          <p>
+            My current focus combines hands-on manual testing
+            with API testing and Playwright automation. I like
+            testing from the user's perspective while also
+            looking underneath the UI to validate requests,
+            responses, data, permissions and edge cases.
+          </p>
+
+
+          <div class="quote-box">
+
+            <span>“</span>
+
+            <p>
+              A good tester doesn't only ask
+              <b>“Does it work?”</b><br>
+
+              They ask
+              <b>“How can I break it?”</b>
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
     </section>
+
+
+    <!-- =========================
+         SKILLS
+    ========================== -->
 
     <section id="skills" class="section skills-section">
+
       <div class="container">
-        <div class="section-kicker">02 / QA STACK</div>
-        <div class="section-head"><h2>My testing <span>toolbox.</span></h2><p>Tools are useful. The thinking behind them is what matters.</p></div>
-        <div class="skills-grid">
-          <article class="skill-card featured"><div class="skill-icon">✓</div><span class="tag">CORE</span><h3>Manual Testing</h3><p>Functional, regression, exploratory, negative, UI, usability and cross-browser testing.</p><div class="chips"><span>Test Design</span><span>Bug Reporting</span><span>Regression</span></div></article>
-          <article class="skill-card"><div class="skill-icon">{ }</div><span class="tag">API</span><h3>API Testing</h3><p>Request/response validation, authentication, negative cases and API workflows.</p><div class="chips"><span>Postman</span><span>REST</span><span>Newman</span></div></article>
-          <article class="skill-card"><div class="skill-icon">⌁</div><span class="tag">AUTOMATION</span><h3>Playwright</h3><p>JavaScript-based UI automation using POM, fixtures, assertions and reusable tests.</p><div class="chips"><span>JavaScript</span><span>POM</span><span>CI/CD</span></div></article>
-          <article class="skill-card"><div class="skill-icon">↯</div><span class="tag">PERFORMANCE</span><h3>JMeter</h3><p>Load scenarios, concurrency testing, response-time analysis and bottleneck investigation.</p><div class="chips"><span>Load Test</span><span>Concurrency</span></div></article>
-          <article class="skill-card"><div class="skill-icon">⌘</div><span class="tag">WORKFLOW</span><h3>Git & GitHub</h3><p>Version control, branches, pull requests and maintaining automation projects.</p><div class="chips"><span>Git</span><span>GitHub</span></div></article>
-          <article class="skill-card"><div class="skill-icon">⌕</div><span class="tag">DATA</span><h3>SQL & Debugging</h3><p>Basic data validation and investigating issues across UI, API and backend behavior.</p><div class="chips"><span>SQL</span><span>DevTools</span></div></article>
+
+        <div class="section-kicker">
+          02 / QA STACK
         </div>
+
+
+        <div class="section-head">
+
+          <h2>
+            My testing <span>toolbox.</span>
+          </h2>
+
+          <p>
+            Tools are useful. The thinking behind them is what matters.
+          </p>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+
+          <article class="skill-card featured">
+
+            <div class="skill-icon">✓</div>
+
+            <span class="tag">CORE</span>
+
+            <h3>Manual Testing</h3>
+
+            <p>
+              Functional, regression, exploratory, negative,
+              UI, usability and cross-browser testing.
+            </p>
+
+            <div class="chips">
+              <span>Test Design</span>
+              <span>Bug Reporting</span>
+              <span>Regression</span>
+            </div>
+
+          </article>
+
+
+          <article class="skill-card">
+
+            <div class="skill-icon">{ }</div>
+
+            <span class="tag">API</span>
+
+            <h3>API Testing</h3>
+
+            <p>
+              Request/response validation, authentication,
+              negative cases and API workflows.
+            </p>
+
+            <div class="chips">
+              <span>Postman</span>
+              <span>REST</span>
+              <span>Newman</span>
+            </div>
+
+          </article>
+
+
+          <article class="skill-card">
+
+            <div class="skill-icon">⌁</div>
+
+            <span class="tag">AUTOMATION</span>
+
+            <h3>Playwright</h3>
+
+            <p>
+              JavaScript-based UI automation using POM,
+              fixtures, assertions and reusable tests.
+            </p>
+
+            <div class="chips">
+              <span>JavaScript</span>
+              <span>POM</span>
+              <span>CI/CD</span>
+            </div>
+
+          </article>
+
+
+          <article class="skill-card">
+
+            <div class="skill-icon">↯</div>
+
+            <span class="tag">PERFORMANCE</span>
+
+            <h3>JMeter</h3>
+
+            <p>
+              Load scenarios, concurrency testing,
+              response-time analysis and bottleneck investigation.
+            </p>
+
+            <div class="chips">
+              <span>Load Test</span>
+              <span>Concurrency</span>
+            </div>
+
+          </article>
+
+
+          <article class="skill-card">
+
+            <div class="skill-icon">⌘</div>
+
+            <span class="tag">WORKFLOW</span>
+
+            <h3>Git & GitHub</h3>
+
+            <p>
+              Version control, branches, pull requests
+              and maintaining automation projects.
+            </p>
+
+            <div class="chips">
+              <span>Git</span>
+              <span>GitHub</span>
+            </div>
+
+          </article>
+
+
+          <article class="skill-card">
+
+            <div class="skill-icon">⌕</div>
+
+            <span class="tag">DATA</span>
+
+            <h3>SQL & Debugging</h3>
+
+            <p>
+              Basic data validation and investigating issues
+              across UI, API and backend behavior.
+            </p>
+
+            <div class="chips">
+              <span>SQL</span>
+              <span>DevTools</span>
+            </div>
+
+          </article>
+
+
+        </div>
+
       </div>
+
     </section>
+
+
+    <!-- =========================
+         WORK
+    ========================== -->
 
     <section id="work" class="section container">
-      <div class="section-kicker">03 / SELECTED WORK</div>
-      <div class="section-head"><h2>Testing in <span>practice.</span></h2><p>Replace these examples with your real projects and GitHub repositories.</p></div>
-      <div class="projects">
-        <article class="project">
-          <div class="project-number">01</div>
-          <div class="project-main"><div class="project-label">WEB APPLICATION / QA</div><h3>CRM Application Testing</h3><p>End-to-end testing across notices, schedules, services, users, reports and other administrative modules. Focused on functional flows, filters, pagination, permissions, validation and edge cases.</p><div class="project-tags"><span>Manual QA</span><span>Regression</span><span>UI Testing</span><span>RBAC</span></div></div>
-          <a class="project-link" href="#" aria-label="Open project">↗</a>
-        </article>
-        <article class="project">
-          <div class="project-number">02</div>
-          <div class="project-main"><div class="project-label">API / TESTING</div><h3>REST API Test Suite</h3><p>A structured collection covering authentication, CRUD operations, status codes, invalid payloads, null values, authorization and response validation.</p><div class="project-tags"><span>Postman</span><span>REST API</span><span>Newman</span><span>Negative Tests</span></div></div>
-          <a class="project-link" href="#" aria-label="Open project">↗</a>
-        </article>
-        <article class="project">
-          <div class="project-number">03</div>
-          <div class="project-main"><div class="project-label">AUTOMATION / JAVASCRIPT</div><h3>Playwright POM Framework</h3><p>Reusable automation structure using Page Object Model, fixtures, assertions and positive/negative test scenarios for a real-world application.</p><div class="project-tags"><span>Playwright</span><span>JavaScript</span><span>POM</span><span>Automation</span></div></div>
-          <a class="project-link" href="#" aria-label="Open project">↗</a>
-        </article>
+
+      <div class="section-kicker">
+        03 / SELECTED WORK
       </div>
+
+
+      <div class="section-head">
+
+        <h2>
+          Testing in <span>practice.</span>
+        </h2>
+
+        <p>
+          Replace these examples with your real projects
+          and GitHub repositories.
+        </p>
+
+      </div>
+
+
+      <div class="projects">
+
+
+        <article class="project">
+
+          <div class="project-number">
+            01
+          </div>
+
+          <div class="project-main">
+
+            <div class="project-label">
+              WEB APPLICATION / QA
+            </div>
+
+            <h3>
+              CRM Application Testing
+            </h3>
+
+            <p>
+              End-to-end testing across notices, schedules,
+              services, users, reports and other administrative
+              modules. Focused on functional flows, filters,
+              pagination, permissions, validation and edge cases.
+            </p>
+
+            <div class="project-tags">
+              <span>Manual QA</span>
+              <span>Regression</span>
+              <span>UI Testing</span>
+              <span>RBAC</span>
+            </div>
+
+          </div>
+
+          <a
+            class="project-link"
+            href="#"
+            aria-label="Open project"
+          >
+            ↗
+          </a>
+
+        </article>
+
+
+        <article class="project">
+
+          <div class="project-number">
+            02
+          </div>
+
+          <div class="project-main">
+
+            <div class="project-label">
+              API / TESTING
+            </div>
+
+            <h3>
+              REST API Test Suite
+            </h3>
+
+            <p>
+              A structured collection covering authentication,
+              CRUD operations, status codes, invalid payloads,
+              null values, authorization and response validation.
+            </p>
+
+            <div class="project-tags">
+              <span>Postman</span>
+              <span>REST API</span>
+              <span>Newman</span>
+              <span>Negative Tests</span>
+            </div>
+
+          </div>
+
+          <a
+            class="project-link"
+            href="#"
+            aria-label="Open project"
+          >
+            ↗
+          </a>
+
+        </article>
+
+
+        <article class="project">
+
+          <div class="project-number">
+            03
+          </div>
+
+          <div class="project-main">
+
+            <div class="project-label">
+              AUTOMATION / JAVASCRIPT
+            </div>
+
+            <h3>
+              Playwright POM Framework
+            </h3>
+
+            <p>
+              Reusable automation structure using Page Object
+              Model, fixtures, assertions and positive/negative
+              test scenarios for a real-world application.
+            </p>
+
+            <div class="project-tags">
+              <span>Playwright</span>
+              <span>JavaScript</span>
+              <span>POM</span>
+              <span>Automation</span>
+            </div>
+
+          </div>
+
+          <a
+            class="project-link"
+            href="#"
+            aria-label="Open project"
+          >
+            ↗
+          </a>
+
+        </article>
+
+
+      </div>
+
     </section>
+
+
+    <!-- =========================
+         APPROACH
+    ========================== -->
 
     <section id="process" class="section process-section">
+
       <div class="container">
-        <div class="section-kicker">04 / MY APPROACH</div>
-        <div class="section-head"><h2>How I think like a <span>tester.</span></h2></div>
-        <div class="process-grid">
-          <div class="process-step"><b>01</b><h3>Understand</h3><p>Learn the requirement, user flow and business rules before writing tests.</p></div>
-          <div class="process-step"><b>02</b><h3>Challenge</h3><p>Try valid, invalid, boundary, empty, duplicate and unexpected inputs.</p></div>
-          <div class="process-step"><b>03</b><h3>Investigate</h3><p>Use browser DevTools, API responses and logs to isolate the actual problem.</p></div>
-          <div class="process-step"><b>04</b><h3>Communicate</h3><p>Report reproducible bugs with clear steps, evidence, impact and expected behavior.</p></div>
+
+        <div class="section-kicker">
+          04 / MY APPROACH
         </div>
+
+
+        <div class="section-head">
+
+          <h2>
+            How I think like a <span>tester.</span>
+          </h2>
+
+        </div>
+
+
+        <div class="process-grid">
+
+
+          <div class="process-step">
+
+            <b>01</b>
+
+            <h3>Understand</h3>
+
+            <p>
+              Learn the requirement, user flow and business
+              rules before writing tests.
+            </p>
+
+          </div>
+
+
+          <div class="process-step">
+
+            <b>02</b>
+
+            <h3>Challenge</h3>
+
+            <p>
+              Try valid, invalid, boundary, empty, duplicate
+              and unexpected inputs.
+            </p>
+
+          </div>
+
+
+          <div class="process-step">
+
+            <b>03</b>
+
+            <h3>Investigate</h3>
+
+            <p>
+              Use browser DevTools, API responses and logs
+              to isolate the actual problem.
+            </p>
+
+          </div>
+
+
+          <div class="process-step">
+
+            <b>04</b>
+
+            <h3>Communicate</h3>
+
+            <p>
+              Report reproducible bugs with clear steps,
+              evidence, impact and expected behavior.
+            </p>
+
+          </div>
+
+
+        </div>
+
       </div>
+
     </section>
+
+
+    <!-- =========================
+         QA MINDSET
+    ========================== -->
 
     <section class="section terminal-strip container">
-      <div class="strip-copy"><span class="section-kicker">QA MINDSET</span><h2>Curious about what<br><span>can go wrong.</span></h2></div>
-      <div class="check-list">
-        <div><i>✓</i> Positive & negative scenarios</div>
-        <div><i>✓</i> Boundary & edge cases</div>
-        <div><i>✓</i> API & UI consistency</div>
-        <div><i>✓</i> Permissions & security checks</div>
-        <div><i>✓</i> Regression confidence</div>
+
+      <div class="strip-copy">
+
+        <span class="section-kicker">
+          QA MINDSET
+        </span>
+
+        <h2>
+          Curious about what<br>
+          <span>can go wrong.</span>
+        </h2>
+
       </div>
+
+
+      <div class="check-list">
+
+        <div>
+          <i>✓</i>
+          Positive & negative scenarios
+        </div>
+
+        <div>
+          <i>✓</i>
+          Boundary & edge cases
+        </div>
+
+        <div>
+          <i>✓</i>
+          API & UI consistency
+        </div>
+
+        <div>
+          <i>✓</i>
+          Permissions & security checks
+        </div>
+
+        <div>
+          <i>✓</i>
+          Regression confidence
+        </div>
+
+      </div>
+
     </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
 
     <section id="contact" class="contact-section">
+
       <div class="container contact">
-        <div class="section-kicker">05 / CONTACT</div>
-        <h2>Let's build better<br><span>software together.</span></h2>
-        <p>Open to junior QA opportunities, testing projects and conversations about quality engineering.</p>
-        <div class="contact-actions">
-          <a class="btn btn-primary" href="mailto:bipinmasal2@gmail.com" aria-label="Email me">Email me ↗</a>
-          <a class="btn btn-ghost" href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="View my GitHub profile">GitHub ↗</a>
-          <a class="btn btn-ghost" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="View my LinkedIn profile">LinkedIn ↗</a>
+
+        <div class="section-kicker">
+          05 / CONTACT
         </div>
+
+
+        <div class="contact-layout">
+
+
+          <!-- CONTACT INFORMATION -->
+
+          <div class="contact-info">
+
+            <h2>
+              Let's build better<br>
+              <span>software together.</span>
+            </h2>
+
+            <p>
+              Open to junior QA opportunities, testing projects
+              and conversations about quality engineering.
+            </p>
+
+
+            <div class="contact-direct">
+
+              <span>
+                DIRECT EMAIL
+              </span>
+
+              <a href="mailto:bipinmasal2@gmail.com">
+                bipinmasal2@gmail.com ↗
+              </a>
+
+            </div>
+
+
+            <div class="contact-socials">
+
+              <a
+                href="https://github.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub ↗
+              </a>
+
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn ↗
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <!-- CONTACT FORM -->
+
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/YOUR_FORM_ID"
+            method="POST"
+          >
+
+            <div class="form-group">
+
+              <label for="name">
+                NAME
+              </label>
+
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                autocomplete="name"
+                required
+              >
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="email">
+                EMAIL
+              </label>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="your@email.com"
+                autocomplete="email"
+                required
+              >
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="message">
+                MESSAGE
+              </label>
+
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Tell me about the opportunity or project..."
+                required
+              ></textarea>
+
+            </div>
+
+
+            <button
+              type="submit"
+              class="btn btn-primary"
+            >
+              Send message ↗
+            </button>
+
+          </form>
+
+
+        </div>
+
       </div>
+
     </section>
+
   </main>
 
-  <footer><div class="container footer"><span>© 2026 Bipin Masal</span><span>Built with curiosity & <b>quality</b>.</span></div></footer>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+    <div class="container footer">
+
+      <span>
+        © 2026 Bipin Masal
+      </span>
+
+      <span>
+        Built with curiosity & <b>quality</b>.
+      </span>
+
+    </div>
+
+  </footer>
+
+
   <script src="script.js"></script>
+
 </body>
 </html>
+```
