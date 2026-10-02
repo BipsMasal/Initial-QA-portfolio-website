@@ -1251,7 +1251,7 @@ h2 {
     9px "JetBrains Mono",
     monospace;
 
-  color: #65717a;
+  color: #bac4cb;
 
   letter-spacing: .12em;
 
@@ -1264,7 +1264,7 @@ h2 {
   width: 100%;
 
   border:
-    1px solid #293139;
+    1px solid #edf0f3;
 
   background: #080b0e;
 
@@ -1286,7 +1286,7 @@ h2 {
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: #4f5961;
+  color: #b7c0c8;
 }
 
 
